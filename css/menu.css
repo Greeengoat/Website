@@ -1,12 +1,13 @@
 
 #cssmenu {
   width: auto;
-  padding: 40px 0 0 0;
+  padding: 60px 0 5px 0;
   line-height: 1;
   position: relative;
   z-index: 9999;
   display: table;  
   margin: 0 auto;
+
 }
 #cssmenu ul {
   list-style: none;
@@ -187,7 +188,7 @@
   top: 21px;
 }
 #cssmenu > ul > li > a {
-  color:  #DCDCDC;
+  color: #C3BABA;
   padding: 12px 20px;
   text-transform: uppercase;
   z-index: 2;
@@ -199,7 +200,7 @@
 }
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li.active > a {
-  color: #131313;
+  color: #0E1C36;
 }
 #cssmenu > ul > li:hover > a:after,
 #cssmenu > ul > li.active > a:after {
