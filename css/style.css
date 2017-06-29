@@ -675,7 +675,7 @@ i.fa-file-pdf-o{
 	display: block;
 	float:left;
 	padding: 90px 70px 60px;
-	margin: 0.5% 0 0.5% 0;
+	margin: 0.5% 0 0.5% 1%;
 	z-index: 9999;
 	color: #202020;
 	border-radius: 20px;
@@ -696,14 +696,13 @@ i.fa-file-pdf-o{
 .group { zoom:1; /* For IE 6/7 */ }
 
 /*  GRID OF THREE  */
-.span_3_of_3 { width: 100%; }
-.span_2_of_3 { width: 66.13%; }
 .span_1_of_3 { width: 32.26%; }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media (max-width: 767px) {
 	.col {  margin: 0; height: 20vh; padding: 6vh 0; font-size:8px; line-height: 0.5;}
-	.section {margin-top:30vh;padding:0 0 0 10px ;}
+	.vhtop30 {margin-top:30vh;padding:0 10px;}
+	.span_1_of_3 { width: 33.33%; }
 }
 
 /* ---------------------------------------------------------------------------- */
