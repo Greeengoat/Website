@@ -156,7 +156,7 @@ p.site-description{margin: 0;font-size: 16px;}
 
 .content-box .content{margin-bottom: 20px;}
 
-.content-box.box-image-1{background:#fff url(../images/young-man2.jpg) no-repeat 50% 20%; color: #333; height:90vh;}
+.content-box.box-image-1{background:#fff url(../images/young-man2.jpg) no-repeat 50% 20%; color: #333;}
 .content-box.box-image-2{background: url(../images/bg-5.jpg) 50% 50% no-repeat;color:#fff;position: relative; background-size:cover}
 .content-box.box-image-2:before {content:"";display: block;height: 100%;position: absolute;top: 0;left: 0;width: 100%;visibility: visible;background-color: rgba(0, 0, 0, .8);}
 
@@ -165,20 +165,21 @@ p.site-description{margin: 0;font-size: 16px;}
 .content-box .bg-4{background: rgba(255, 255, 255, .85);}
 .content-box.bg-2-2{background:grey;}
 
-.content-box.box-1 {font-family: 'Roboto', sans-serif;}
-.content-box.box-1 .box-text{padding: 145px 10px 140px}
+.content-box.box-1 {font-family: 'Roboto', sans-serif;margin-top:10vh; margin-bottom:10vh}
+.content-box.box-1 .box-text{padding: 145px 10px;}
 .content-box.box-1 h2{font-size: 44px;color: #B81D18;line-height: 1;margin: 45px 0 15px 0px;font-weight: 300;}
 .content-box.box-1 span{font-size: 44px;font-weight: 300;color: #333;display: block;margin-bottom: 20px;margin-top:60px;text-indent: -5px}
 .content-box.box-1 img{margin: 10px 0;}
 .content-box.box-1 .lead {font-size: 19px;color: #444; margin-top:15vh;}
 .content-box.box-1 .lead1 {font-size: 19px;color: #444;}
 
-@media  (max-width: 767px){ .content-box.box-2 .heading.customized h2{font-size: 50px;position: relative;padding-bottom: 5px; font-weight: 500; margin: 0 0 -40px;}
-.content-box.box-1 .box-text{padding: 60px; text-align: initial;}
-.content-box.box-1 span{font-size: 32px;font-weight: 300;color: #333;display: block;margin-bottom: 20px;margin-top:25px;text-indent: -5px;}
-.content-box.box-1 .lead {font-size: 15px;color: #444; margin-top:30vh;}
-.content-box.box-1 .lead1 {font-size: 15px;color: #444; line-height: 1.2}
-.box-text2{padding: 28px 0;}
+@media  (max-width: 767px){ 
+	.content-box.box-2 .heading.customized h2{font-size: 50px;position: relative;padding-bottom: 5px; font-weight: 500; margin: 0 0 -40px;}
+	.content-box.box-1 .box-text{padding: 120px 30px 0; text-align: initial;}
+	.content-box.box-1 span{font-size: 32px;font-weight: 300;color: #333;display: block;margin-bottom: 20px;margin-top:25px;text-indent: -5px;}
+	.content-box.box-1 .lead {font-size: 15px;color: #444; margin-top:30vh;}
+	.content-box.box-1 .lead1 {font-size: 15px;color: #444; line-height: 1.2}
+	.box-text2{padding: 28px 0;}
 
 }
 
@@ -495,7 +496,6 @@ i.fa-file-pdf-o{
 
 @media  (max-width: 767px){ 
 	.grid { all: unset; }
-	.col.span_1_of_3 { width: 100% }
 	.boxgrid { width:100%; padding: 0 20px}
 }
 
@@ -602,6 +602,10 @@ i.fa-file-pdf-o{
 	border:1px solid black;
 }
 
+.button:hover {
+	background-color: transparent;
+}
+
 .button a {
 	text-decoration:none;
 }
@@ -612,10 +616,11 @@ i.fa-file-pdf-o{
 	transition-property:all .2s linear 0s;
 	-moz-transition:all .2s linear 0s;
 	-webkit-transition:all .2s linear 0s;
-	-o-transition:all .2s linear 0s;
+	-o-transition
+	:all .2s linear 0s;
 }
 .btn-open:hover:after {
-	color: white;
+	color: #F0F0F0;
 }
 .btn-close:after {
 	color:black;
@@ -627,7 +632,11 @@ i.fa-file-pdf-o{
 	-o-transition:all .2s linear 0s;
 }
 .btn-close:hover:after {
-	color: white;
+	color: #F0F0F0;
+}
+
+@media (max-width: 767px) { 
+	.button { top: 0; left: 0; border: none }
 }
 
 /*overlay*/
@@ -692,9 +701,9 @@ i.fa-file-pdf-o{
 .span_1_of_3 { width: 32.26%; }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-	.col {  margin: 1% 0 1% 0%; }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+@media (max-width: 767px) {
+	.col {  margin: 0; height: 20vh; width: 20vh; padding: 6vh 35px; font-size:8px; line-height: 0.5;}
+	.section {margin-top:20vh;padding:0 10px;}
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -835,7 +844,7 @@ i.fa-file-pdf-o{
 	text-transform: uppercase;
 }
 
-@media(max-width:767px){
+@media (max-width:767px) {
 	.polaroid-images{
 		height: 170px;
 		width: 35vw;
