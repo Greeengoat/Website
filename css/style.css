@@ -702,8 +702,8 @@ i.fa-file-pdf-o{
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media (max-width: 767px) {
-	.col {  margin: 0; height: 20vh; width: 20vh; padding: 6vh 35px; font-size:8px; line-height: 0.5;}
-	.section {margin-top:20vh;padding:0 10px;}
+	.col {  margin: 0; height: 20vh; padding: 6vh 0; font-size:8px; line-height: 0.5;}
+	.section {margin-top:30vh;padding:0 0 0 10px ;}
 }
 
 /* ---------------------------------------------------------------------------- */
