@@ -701,7 +701,7 @@ i.fa-file-pdf-o{
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media (max-width: 767px) {
 	.col {  margin: 0; height: 20vh; padding: 6vh 0; font-size:8px; line-height: 0.5;}
-	.vhtop30 {margin-top:30vh;padding:0 10px;}
+	.vhtop30 {margin: 0 30vh; padding:0 10px;}
 	.span_1_of_3 { width: 33.33%; }
 }
 
