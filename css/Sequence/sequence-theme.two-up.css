@@ -113,7 +113,7 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;;
   /* Horizontally align and move up so it sits at the bottom of the feature */
   -webkit-transform: translateX(-50%) translateY(-100%) translateZ(100px);
   -ms-transform: translateX(-50%) translateY(-100%) translateZ(100px);
@@ -131,6 +131,7 @@ body {
 .seq .seq-swipe {
   display: inline-block;
   vertical-align: top;
+  z-index: 99;
 }
 
 .seq .seq-swipe {
@@ -245,7 +246,7 @@ body {
   top: 50%;
   left: 100%;
   height: 2px;
-  width: 1.25em;
+  width: .5em;
   background: white;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -280,7 +281,7 @@ body {
   background: white;
   text-align: center;
   font-size: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family:'Open Sans', sans-serif;
   /* Hide the content until it is active and fades in */
   opacity: 0;
   /* When active, move the content over .3s */
@@ -297,7 +298,7 @@ body {
 .seq .seq-content h2 {
   margin: 0;
   margin-bottom: .2em;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.625em;
   font-weight: 700;
 }
@@ -308,6 +309,16 @@ body {
   font-size: 1em;
   font-weight: 300;
   font-style: justify;
+}
+
+.seq-ncontent {
+  width: 100%;
+  text-align: left;
+  position: absolute; 
+  text-align: justify;
+  text-align: center;
+  left: 0;
+  top: 55%;
 }
 
 .seq .seq-content > div {
@@ -326,7 +337,7 @@ body {
   color: black;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: .875em;
   font-weight: 400;
   -webkit-transition-duration: 0.3s;

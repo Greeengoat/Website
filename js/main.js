@@ -9,3 +9,11 @@ $(document).ready(function(){
 	});
 });
 
+jQuery(document).ready(function ($) {
+    $(window).load(function () {
+        setTimeout(function(){
+            $(".se-pre-con").fadeOut('slow', function () {
+            });
+        },1000); // set the time here
+    });  
+});
