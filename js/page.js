@@ -80,7 +80,6 @@ jQuery(document).ready(function(event){
         //if the new page was triggered by a 'popstate' event, don't add it
         //window.history.pushState({path: url},'',url);
       }
-      $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'css/Sequence/sequence-theme.two-up.css') );
 		});
   }
 
