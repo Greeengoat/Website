@@ -863,29 +863,31 @@ i.fa-instagram{
 }
 
 .email input {
-	background-color: #202020;
-	color:white;
-	border-radius: 25px;
+	background-color: white;
+	color:black;
+	border-radius: 5px;
+	box-shadow: 0 0 0 1px black inset;
 	width: 145px; 
 }
 
 .skype input:hover {
 	cursor: pointer;
-	color: #00aff0;
-	background-color: white;
+	color: white;
+	background-color: #00aff0;
 }
 
 .email input:hover {
 	cursor: pointer;
-	color:black;
-	background-color: white;
+	color:white;
+	background-color: black;
 }
 
 .skype input {
 	display:inline-block;
-	background-color: #00aff0;
-	color:white;
-	border-radius: 25px;
+	background-color: white;
+	box-shadow: 0 0 0 1px #00aff0 inset;
+	color:black;
+	border-radius: 5px;
 	width: 145px; 
 }
 
