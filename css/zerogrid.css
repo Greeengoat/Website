@@ -1,5 +1,5 @@
 /* ------------------Grid System--------------- */ 
-.grid { width: 900px;  margin: 0 auto; padding: 0px; display: table; vertical-align: text-top; transform: translate(-50%, -50%);
+.grid { width: 850px;  margin: 0 auto; padding: 0px; display: table; vertical-align: text-top; transform: translate(-50%, -50%);
   position: absolute; top: 50%; left: 50%;}
   
 .zerogrid{ width: 1000px; position: relative; margin: 0 auto; padding: 0px;}

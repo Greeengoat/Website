@@ -1,7 +1,12 @@
+$(document).ready(function() {
+    $('body').removeClass('page-is-changing');
+    console.log("change");
+});
+
 jQuery(document).ready(function(event){
   var isAnimating = false,
-    newLocation = '';
-    firstLoad = false;
+  newLocation = '';
+  firstLoad = false;
   
   //trigger smooth transition from the actual page to the new one 
   $('body').on('click', '[data-type="page-transition"]', function(event){
@@ -20,47 +25,54 @@ jQuery(document).ready(function(event){
       /*
       Safari emits a popstate event on page load - check if firstLoad is true before animating
       if it's false - the page has just been loaded 
-      */
-    console.log("popstate");
+        */
+      console.log("popstate");
       var newPageArray = location.pathname.split('/'),
         //this is the url of the page to be loaded 
         newPage = newPageArray[newPageArray.length - 1];
-      console.log(newPage);
-      console.log(newPageArray);
+        console.log(newPage);
+        console.log(newPageArray);
 
-      if( !isAnimating  &&  newLocation != newPage ) changePage(newPage, false);
-    }
-    firstLoad = true;
-	});
+        if( !isAnimating  &&  newLocation != newPage ) changePage(newPage, false);
+      }
+      firstLoad = true;
+    });
 
-	function changePage(url, bool) {
+  function changePage(url, bool) {
     isAnimating = true;
     // trigger page animation
     $('body').addClass('page-is-changing');
+    $('.cd-loading-bar').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
+    setTimeout(function(){ 
+      window.location = url;
+      $('body').removeClass('page-is-changing');
+    },5000);
+    /*
     $('.cd-loading-bar').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
     	loadNewContent(url, bool);
       newLocation = url;
       $('.cd-loading-bar').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
     });
+    */
     //if browser doesn't support CSS transitions
     if( !transitionsSupported() ) {
       loadNewContent(url, bool);
       console.log("Transition not supported");
       newLocation = url;
     }
-	}
+  }
 
-	function loadNewContent(url, bool) {
-		url = ('' == url) ? 'index.html' : url;
+  function loadNewContent(url, bool) {
+    url = ('' == url) ? 'index.html' : url;
     console.log(url);
-  	var newSection = 'cd-'+url.replace('.html', '');
-  	var section = $('<div class="cd-main-content '+newSection+'"></div>');
+    var newSection = 'cd-'+url.replace('.html', '');
+    var section = $('<div class="cd-main-content '+newSection+'"></div>');
     console.log(newSection);
     console.log(section);
-  		
-  	section.load(url+' .cd-main-content > *', function(event){
+
+    section.load("internship.html", function(event){
       // load new content and replace <main> content with the new one
-      $('html').html(section);
+      $('body').html(section);
       console.log("loading");
       //if browser doesn't support CSS transitions - dont wait for the end of transitions
       var delay = ( transitionsSupported() ) ? 1200 : 0;
@@ -81,7 +93,7 @@ jQuery(document).ready(function(event){
         //if the new page was triggered by a 'popstate' event, don't add it
         //window.history.pushState({path: url},'',url);
       }
-		});
+    });
   }
 
   function transitionsSupported() {

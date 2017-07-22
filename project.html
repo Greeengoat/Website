@@ -21,25 +21,15 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <script src="js/jquery1111.min.js" type="text/javascript"></script>
-    <script src="js/script.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/Project/index.js"></script>
 
     <!-- Owl Carousel Assets -->
     <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
 
     <!--  Resources style ================== -->
-    <link href="css/Project/theme-Dark.css" rel="stylesheet" type="text/css" media="all"/>
-
+    <link href="css/Project/style.css" rel="stylesheet" type="text/css" media="all"/>
     <link rel="shortcut icon" type="image/x-cion" href="images/favicon.ico"/>
-
-    <script> 
-    	$(function() {
-    		$('.soflow').change(function(){
-    			$('.md-chips').hide();
-    			$('#' + $(this).val()).show();
-    		});
-    	});
-    </script>
 
 </head>
 
@@ -47,7 +37,7 @@
 	<div class="se-pre-con"></div>
 	<div class="wrap-body">
 		<div class="button">
-			<a class="btn-white btn-open" href="#"></a>
+			<a class="btn-open" href="#"></a>
 		</div>
 		<header> 
 			<div class="overlay">
@@ -86,241 +76,72 @@
 			</div>
 		</header>
 	</div>
-	<section class="animsition">
-
-		<div id="leftSide">
-			<div id="home" class="gradient">
-
-				<div class="h-content">
-					<h2>MODULES COMPLETED</h2>
-					<select class="soflow">
-						<option>Select an Option</option>
-						<option value="A">Business Analytics</option>
-						<option value="B">Business & Communication</option>
-						<option value="C">Computation & Programming</option>
-						<option value="D">Mathematics & Statistics</option>
-					</select>
-
-					<div id="A" class="md-chips" style="display:none">
-						<div class="md-chip">Introduction to Business Analytics</div>
-						<div class="md-chip">IT and Decision Making</div>
-						<div class="md-chip">Application Systems Development</div>
+	<div class="slider-container">
+		<div class="slider-control left inactive"></div>
+		<div class="slider-control right"></div>
+		<ul class="slider-pagi"></ul>
+		<div class="slider">
+			<div class="slide slide-0 active">
+				<div class="slide__bg"></div>
+				<div class="slide__content">
+					<svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+						<path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+					</svg>
+					<div class="slide__text">
+						<div class="newheading projectHeader">
+							<h2><span>Introduction to <br> Business Analytics</span></h2>
+						</div>
+						<h2>Premier League Analytics</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Click <a href="#" class="projectlink">here</a>.</p>
 					</div>
-
-					<div id="B" class="md-chips" style="display:none">
-						<div class="md-chip">Financial Accounting</div>
-						<div class="md-chip">Principles of Economics</div>
-						<div class="md-chip">Strategic IT Applications</div>
-						<div class="md-chip">E-Business Essentials</div>
-						<div class="md-chip">Marketing</div>
-						<div class="md-chip">Business and Technical Communication</div>
-					</div>
-
-					<div id="C" class="md-chips" style="display:none">
-						<div class="md-chip">Programming Methodology</div>
-						<div class="md-chip">Data Structures and Algorithms I</div>
-						<div class="md-chip">Data Structures and Algorithms II</div>
-					</div>
-
-					<div id="D" class="md-chips" style="display:none">
-						<div class="md-chip">Linear Algebra</div>
-						<div class="md-chip">Calculus for Computing</div>
-						<div class="md-chip">Probability and Statistics</div>
-						<div class="md-chip">Regression Analysis</div>
-					</div>
-
 				</div>
 			</div>
-
-		</div>
-
-	</div>
-
-	<div id="rightSide">
-
-		<div class="project">
-			<ul class="gallery project_navigation">
-				<li class="item col-sm-6 col-xs-12">
-					<figure>
-						<!-- Your picture -->
-						<img src="images/PL.png" class="img-responsive" />
-						<!-- Picture's description below this one -->
-						<figcaption class="caption">
-							<div class="photo-details">
-								<h4>BT1101</h4>
-								<span>Introduction to Business Analytics</span>
-							</div>
-							<a href="#project1" class="view">VIEW</a>
-						</figcaption>
-					</figure>
-				</li>
-
-				<li class="item col-sm-6 col-xs-12">
-					<figure>
-						<!-- Your picture -->
-						<img src="images/airbnb.jpg"  class="img-responsive" />
-						<!-- Picture's description below this one -->
-						<figcaption class="caption">
-							<div class="photo-details">
-								<h4>IS1105</h4>
-								<span>Strategic IT Applications</span>
-							</div>
-							<a href="#project2" class="view">VIEW</a>
-						</figcaption>
-					</figure>
-				</li>
-
-				<li class="item col-sm-6 col-xs-12">
-					<figure>
-						<!-- Your picture -->
-						<img src="images/cola.jpg" class="img-responsive" />
-						<!-- Picture's description below this one -->
-						<figcaption class="caption">
-							<div class="photo-details">
-								<h4>BT2101</h4>
-								<span>IT and Decision Making</span>
-							</div>
-							<a href="#project3" class="view">VIEW</a>
-						</figcaption>
-					</figure>
-				</li>
-
-				<li class="item col-sm-6 col-xs-12">
-					<figure>
-						<!-- Your picture -->
-						<img src="images/communication.jpeg" class="img-responsive" />
-						<!-- Picture's description below this one -->
-						<figcaption class="caption">
-							<div class="photo-details">
-								<h4>IS2101</h4>
-								<span>Business & Technical Communication</span>
-							</div>
-							<a href="#project4" class="view">VIEW</a>
-						</figcaption>
-					</figure>
-				</li>
-
-				<li class="item col-sm-6 col-xs-12">
-					<figure>
-						<!-- Your picture -->
-						<img src="images/food.jpg" class="img-responsive" />
-						<!-- Picture's description below this one -->
-						<figcaption class="caption">
-							<div class="photo-details">
-								<h4>BT3103</h4>
-								<span>Application Systems Development</span>
-							</div>
-							<a href="#project5" class="view">VIEW</a>
-						</figcaption>
-					</figure>
-				</li>
-
-
-				<li class="item col-sm-6 col-xs-12">
-					<figure>
-						<!-- Your picture -->
-						<img src="images/stats.jpg" class="img-responsive" />
-						<!-- Picture's description below this one -->
-						<figcaption class="caption">
-							<div class="photo-details">
-								<h4>ST3131</h4>
-								<span>Regression Analysis</span>
-							</div>
-							<a href="#project6" class="view">VIEW</a>
-						</figcaption>
-					</figure>
-				</li>
-
-
-			</ul>
-
-			<ul class="project_info">
-				<li id="project1">
-					<div class="project_content">
-						<h2>YOUR TITLE GOES HERE</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-						</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-						</p>
+			<div class="slide slide-1 ">
+				<div class="slide__bg"></div>
+				<div class="slide__content">
+					<svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+						<path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+					</svg>
+					<div class="slide__text">
+						<div class="newheading projectHeader">
+							<h2><span>Decision Making Methods and Tools</span></h2>
+						</div>
+						<h2>The Coca Cola Company</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Click <a href="#" class="projectlink">here</a>.</p>
 					</div>
-				</li>
-
-				<li id="project2">
-					<div class="project_content">
-						<h2>YOUR TITLE GOES HERE</h2>
-						<video width="100%" controls>
-							<source src="images/video.mp4" type="video/mp4">
-							</video>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-							</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-							</p>
+				</div>
+			</div>
+			<div class="slide slide-2">
+				<div class="slide__bg"></div>
+				<div class="slide__content">
+					<svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+						<path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+					</svg>
+					<div class="slide__text">
+						<div class="newheading projectHeader">
+							<h2><span>Application <br> Systems Development</span></h2>
 						</div>
-					</li>
-
-					<li id="project3">
-						<div class="project_content">
-							<h2>YOUR TITLE GOES HERE</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-							</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-							</p>
+						<h2>Openjio</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Click <a href="#" class="projectlink">here</a>.</p>
+					</div>
+				</div>
+			</div>
+			<div class="slide slide-3">
+				<div class="slide__bg"></div>
+				<div class="slide__content">
+					<svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+						<path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+					</svg>
+					<div class="slide__text">
+						<div class="newheading projectHeader">
+							<h2><span>Business and Technical Communication</span></h2>
 						</div>
-					</li>
-
-					<li id="project4">
-						<div class="project_content">
-							<h2>YOUR TITLE GOES HERE</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-							</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-							</p>
-						</div>
-					</li>
-
-					<li id="project5">
-						<div class="project_content">
-							<h2>YOUR TITLE GOES HERE</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-							</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-							</p>
-						</div>
-					</li>
-
-					<li id="project6">
-						<div class="project_content">
-							<h2>YOUR TITLE GOES HERE</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-							</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?
-							</p>
-						</div>
-					</li>
-				</ul>
+						<h2>Minicure</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Click <a href="#" class="projectlink">here</a>.</p>
+					</div>
+				</div>
 			</div>
 		</div>
-	</section>
-
-	<script src="js/Project/jquery-1.11.3.min.js"></script>
-	<script src="js/Project/bootstrap.min.js"></script>
-	<script src="js/Project/animsition.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-	<script src="js/Project/jquery.magnific-popup.min.js"></script>
-	<script src="js/Project/jquery.countdown.min.js"></script>
-	<script src="js/Project/twitterFetcher_min.js"></script>
-	<script src="js/Project/masonry.pkgd.min.js"></script>
-	<script src="js/Project/imagesloaded.pkgd.min.js"></script>
-	<script src="js/Project/jquery.flexslider-min.js"></script>
-	<script src="js/Project/photoswipe.min.js"></script>
-	<script src="js/Project/photoswipe-ui-default.min.js"></script>
-	<script src="js/Project/jqinstapics.min.js"></script>
-	<script src="js/Project/script.js"></script>
+	</div>
 </body>
 </html>
