@@ -503,11 +503,11 @@
 	}
 
 	.nav-dots {
-		top: 80vh;
+		bottom: 0;
 	}
 
 	.demo-1 .sl-slider-wrapper {
-		height: 22%;
+		height: 36%;
 	}
 
 }
