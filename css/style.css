@@ -681,8 +681,8 @@ i.fa-instagram{
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media (max-width: 767px) {
-	.col {  margin: 0; height: 20vh; padding: 6vh 0; font-size:8px; line-height: 0.5;}
-	.vhtop30 {margin: 30vh 0; padding:0 10px;}
+	.col {  margin: 0; height: 20vh; padding: 6vh 0; font-size:8px; line-height: 0.5; box-shadow: none; border:1px solid;}
+	.vhtop30 {margin: 28vh 0; padding:0 10px;}
 	.span_1_of_3 { width: 33.33%; }
 	.col p {font-size: 8px}
 }
