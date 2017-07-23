@@ -840,6 +840,14 @@ i.fa-instagram{
 	}
 }
 
+.contactBG {
+	background:url(../images/data.jpg) no-repeat 50% 50%; 
+	background-size: 100%;
+	position:relative;
+	height:50vh;
+	z-index:-1
+}
+
 .card { 
 	position: relative;
 	margin: 0 auto;
@@ -966,6 +974,13 @@ h2.double:after {
 	}
 }
 
+.copyright {
+	position:absolute;
+	bottom:0;
+	left:20px;
+	color:white;
+}
+
 .no-js #loader { display: none; }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
@@ -976,5 +991,37 @@ h2.double:after {
 	height: 100%;
 	z-index: 9999;
 	background: url(../images/Preloader_2.gif) center no-repeat #fff;
+}
+
+@media(max-width:767px){
+	.copyright {
+		display:none;
+	}
+	.contactBG {display: none;}
+	html {
+		background: url(../images/data.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		overflow: hidden;
+	}
+	.card {
+		position: absolute;
+		width: 100%
+	}
+	.contactImg {
+		display: none;
+	}
+	.contactHeader {
+		padding: 50px 0 0 0;
+		width: 100%;
+		left:0;
+		text-align: center;
+	}
+	.contactText {
+		padding: 0 0 0 30px;
+		float: left;
+	}
 }
 

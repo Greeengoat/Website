@@ -103,7 +103,7 @@ body {
 .seq .seq-nav {
   display: none;
   position: absolute;
-  z-index: 100;
+  z-index: 10;
   top: 200px;
   left: 50%;
   padding: .5em 1em;
@@ -526,6 +526,7 @@ body {
     -webkit-transform: translateY(-50%) translateZ(100px);
     -ms-transform: translateY(-50%) translateZ(100px);
     transform: translateY(-50%) translateZ(100px);
+    z-index: 10;
   }
 
   .seq .seq-pagination li {
@@ -672,6 +673,7 @@ body {
     width: 1em;
     left: auto;
     margin-top: 0;
+    z-index: 10;
   }
 }
 
@@ -694,6 +696,7 @@ body {
 
   .seq .seq-nav {
     top: 300px;
+    z-index: 10;
   }
 
   .seq .seq-feature {
@@ -706,6 +709,7 @@ body {
 
   .seq .seq-nav {
     top: 400px;
+    z-index: 10;
   }
 
   .seq .seq-feature {
