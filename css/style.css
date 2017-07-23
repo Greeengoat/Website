@@ -154,7 +154,7 @@ p.site-description{margin: 0;font-size: 16px;}
 
 .content-box .content{margin-bottom: 20px;}
 
-.content-box.box-image-1{background:#fff url(../images/yang_edit.jpg) no-repeat 5% 10%; color: #333; height: 100%; background-size:51%;}
+.content-box.box-image-1{background:#fff url(../images/yang.jpg) no-repeat 5% 20%; color: #333; height: 100%; background-size:54%;}
 .content-box.box-image-2{background: url(../images/bg-5.jpg) 50% 50% no-repeat;color:#fff;position: relative; background-size:cover}
 .content-box.box-image-2:before {content:"";display: block;height: 100%;position: absolute;top: 0;left: 0;width: 100%;visibility: visible;background-color: rgba(0, 0, 0, .8);}
 
@@ -164,7 +164,7 @@ p.site-description{margin: 0;font-size: 16px;}
 .content-box.bg-2-2{background:grey;}
 
 .content-box.box-1 {font-family: 'Roboto', sans-serif;margin-top:10vh; margin-bottom:10vh;}
-.content-box.box-1 .box-text{padding: 200px 0 125px 100px; position: relative;}
+.content-box.box-1 .box-text{padding: 200px 0 145px 100px; position: relative;}
 .content-box.box-1 h2{font-size: 44px;color: #B81D18;line-height: 1;margin: 45px 0 15px 0px;font-weight: 300;}
 .content-box.box-1 span{font-size: 46px;font-weight: 300;color: #333;display: block;margin-bottom: 20px;margin-top:60px;text-indent: -5px}
 .content-box.box-1 img{margin: 10px 0;}
@@ -176,7 +176,7 @@ p.site-description{margin: 0;font-size: 16px;}
 	.content-box.box-1 span{font-size: 38px;font-weight: 300;color: #333;display: block;margin-bottom: 20px;margin-top:25px;text-indent: -5px;}
 	.content-box.box-1 .lead {font-size: 0px;color: #444; margin-top:35vh;}
 	.content-box.box-1 .lead1 {font-size: 15px;color: #444; line-height: 1.2}
-	.content-box.box-image-1{background:#fff url(../images/yang_edit.jpg) no-repeat 85% 0%; color: #333; height: 100%; background-size:80%;}
+	.content-box.box-image-1{background:#fff url(../images/yang.jpg) no-repeat 85% 0%; color: #333; height: 100%; background-size:80%;}
 }
 
 .content-box.box-2 {color: black; margin-top: 60px}
@@ -841,48 +841,51 @@ i.fa-instagram{
 }
 
 .card { 
-	display: relative;
-	margin: 0 auto;
-	height: 78vh;
-	width: 80%;
-	margin-top: 100px;
-	background: white;
-	border-radius: 15px;
-}
-
-.profileImg {
-	border-radius: 50%; 
-	height: 200px; 
-	width: 200px; 
-	margin: 0 auto; 
-	left: 0;
-	right: 0;
-	display: block; 
-	margin-top: 23vh; 
-	border: 5px solid #989898;
-	position: absolute;
-	display: block;
-	z-index: 99;
-}
-
-.profileImg img{
-	margin: 0 auto;
-	object-fit: cover;
-	display: absolute;
-}
-
-.bg-image {
 	position: relative;
-	object-fit: cover;
-	width: 100%;
-	height: 36vh;
-	border-bottom: 5px solid #989898;
-	border-radius: 15px 15px 0 0;
+	margin: 0 auto;
+	height: 48vh;
+	width: 70%;
+	background: white;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.contactImg {
+	width: 40%;
+	height: 100%;
+	border:1px solid;
+	background: url(../images/yang3.jpg) 50% 50% no-repeat;
+	background-size: 100%;
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+.contactHeader {
+	position: relative;
+	display: inline;
+	width: 50%;
+	height: 40%;
+	left: 50px;
+	border-bottom: 2px solid #F0F0F0;
+	font-size: 30px;
+	padding: 70px 20px 10px;
+	float: left;
+}
+
+.contactText {
+	position: relative;
+	top: 30px;
+	width: 60%;
+	float: right;
+	padding: 10px 75px;
 }
 
 .contact {
-	margin: 20vh 0 0 0;
+	margin: 0;
+	padding-top: 35vh;
 	text-align: center;
+	border: 1px solid;
 }
 
 .contact form {
@@ -899,25 +902,10 @@ i.fa-instagram{
 	width: 145px; 
 }
 
-.skype input:hover {
-	cursor: pointer;
-	color: white;
-	background-color: #00aff0;
-}
-
 .email input:hover {
 	cursor: pointer;
 	color:white;
 	background-color: black;
-}
-
-.skype input {
-	display:inline-block;
-	background-color: white;
-	box-shadow: 0 0 0 1px #00aff0 inset;
-	color:black;
-	border-radius: 5px;
-	width: 145px; 
 }
 
 h2.background {
