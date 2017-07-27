@@ -303,22 +303,30 @@ body {
   font-weight: 700;
 }
 
+.date-content {
+  top: 15%;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;  
+}
+
 .seq .seq-content h3 {
   margin: 0;
   line-height: 160%;
+  top: 0%;
   font-size: 1em;
   font-weight: 300;
   font-style: justify;
 }
 
 .seq-ncontent {
-  width: 100%;
-  text-align: left;
   position: absolute; 
   text-align: justify;
-  text-align: center;
-  left: 0;
-  top: 55%;
+  display: block;
+  width: 80%;
+  left: 10%;
+  top: 35%;
 }
 
 .seq .seq-content > div {
