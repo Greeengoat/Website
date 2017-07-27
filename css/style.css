@@ -163,7 +163,7 @@ p.site-description{margin: 0;font-size: 16px;}
 .content-box .bg-4{background: rgba(255, 255, 255, .85);}
 .content-box.bg-2-2{background:grey;}
 
-.content-box.box-1 {font-family: 'Roboto', sans-serif;margin-top:10vh; margin-bottom:10vh;}
+.content-box.box-1 {font-family: 'Roboto', sans-serif;margin-top:10vh; margin-bottom:0vh;}
 .content-box.box-1 .box-text{padding: 200px 0 145px 100px; position: relative;}
 .content-box.box-1 h2{font-size: 44px;color: #B81D18;line-height: 1;margin: 45px 0 15px 0px;font-weight: 300;}
 .content-box.box-1 span{font-size: 46px;font-weight: 300;color: #333;display: block;margin-bottom: 20px;margin-top:60px;text-indent: -5px}
