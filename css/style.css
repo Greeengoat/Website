@@ -140,7 +140,7 @@ p.site-description{margin: 0;font-size: 16px;}
 
 /* ---content-box--- */
 .content-box {margin: 35px 0;}
-.content-box .wrap-box {padding: 20px auto; position: relative;}
+.content-box .wrap-box {padding: 20px auto; position:relative; margin-bottom:5%;margin-top:5%;}
 
 .box-text{padding: 48px;}
 .box-text2{padding: 48px;}
@@ -163,7 +163,7 @@ p.site-description{margin: 0;font-size: 16px;}
 .content-box .bg-4{background: rgba(255, 255, 255, .85);}
 .content-box.bg-2-2{background:grey;}
 
-.content-box.box-1 {font-family: 'Roboto', sans-serif;margin-top:10vh; margin-bottom:0vh;}
+.content-box.box-1 {font-family: 'Roboto', sans-serif;margin-top:0vh; margin-bottom:0vh;}
 .content-box.box-1 .box-text{padding: 200px 0 145px 100px; position: relative;}
 .content-box.box-1 h2{font-size: 44px;color: #B81D18;line-height: 1;margin: 45px 0 15px 0px;font-weight: 300;}
 .content-box.box-1 span{font-size: 46px;font-weight: 300;color: #333;display: block;margin-bottom: 20px;margin-top:60px;text-indent: -5px}
@@ -510,7 +510,7 @@ i.fa-instagram{
 	overflow: hidden;
 	text-indent: 100%;
 	white-space: nowrap;
-	background: #202020 url(../images/cd-top-arrow.svg) no-repeat center 50%;
+	background: rgba(0,0,0,0.1) url(../images/cd-top-arrow.svg) no-repeat center 50%;
 	visibility: hidden;
 	opacity: 1;
 	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
@@ -862,8 +862,8 @@ i.fa-instagram{
 	width: 310px;
 	height: 100%;
 	border-right: 1px solid black;
-	background: url(../images/yang-1.jpg) 20% 0% no-repeat;
-	background-size: 80%;
+	background: url(../images/profile_pic.png) 50% 50% no-repeat;
+	background-size: 105%;
 	position: relative;
 	display: inline-block;
 	float: left;
@@ -1026,3 +1026,22 @@ h2.double:after {
 	}
 }
 
+/* List styling */
+.featureList, .featureList ul {
+  margin-top: 0;
+  padding-left: 2em;
+  list-style-type: none;
+}
+.featureList li:before {
+  position: absolute;
+  margin-left: -1.3em;
+  font-weight: bold;
+}
+.featureList li.tick:before {
+  content: "\2713";
+  color: darkgreen;
+}
+.featureList li.cross:before {
+  content: "\2717";
+  color: crimson;
+}
