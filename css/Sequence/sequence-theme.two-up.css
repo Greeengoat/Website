@@ -113,7 +113,7 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   color: white;
-  font-family: 'Open Sans', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
   /* Horizontally align and move up so it sits at the bottom of the feature */
   -webkit-transform: translateX(-50%) translateY(-100%) translateZ(100px);
   -ms-transform: translateX(-50%) translateY(-100%) translateZ(100px);
@@ -125,6 +125,7 @@ body {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  z-index:1;
 }
 
 .seq .seq-pagination,
@@ -141,6 +142,7 @@ body {
 .seq .seq-swipe path {
   /* Color of the swipe icon */
   fill: white;
+  z-index: 1;
 }
 
 .seq .seq-next {
@@ -177,6 +179,7 @@ body {
   transition-duration: 0.3s;
   -webkit-transition-property: background;
   transition-property: background;
+  z-index: 1;
 }
 
 .seq .seq-pagination li .numeral {
@@ -191,6 +194,7 @@ body {
   -webkit-transition-property: color;
   transition-property: color;
   -moz-osx-font-smoothing: grayscale;
+  z-index: 1;
 }
 
 .seq .seq-pagination li:focus,
@@ -251,26 +255,31 @@ body {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 1;
 }
 
 .seq .seq-pagination li:last-child {
   /* Remove the line after the last dot as it's not needed */
   margin-bottom: 0;
   margin-right: 0;
+  z-index: 1;
 }
 
 .seq .seq-pagination li:last-child:after {
   content: none;
+  z-index: 1;
 }
 
 .seq .seq-tooltip {
   /* Turn off tooltips for small layout */
   display: none;
+  z-index: 1;
 }
 
 .seq .seq-next-button {
   /* Turn off the next button for small layout */
   display: none;
+  z-index: 1;
 }
 
 .seq .seq-content {
@@ -293,6 +302,7 @@ body {
   transition-property: opacity;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
+  z-index: 1;
 }
 
 .seq .seq-content h2 {
@@ -301,23 +311,37 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.625em;
   font-weight: 700;
+  z-index: 1;
 }
 
 .date-content {
-  top: 15%;
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;  
+  height: 300px;
+  background: #F0F0F0;
+  z-index: 1;
+}
+
+.date-margin {
+  margin-top:10%;
 }
 
 .seq .seq-content h3 {
   margin: 0;
   line-height: 160%;
   top: 0%;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 300;
   font-style: justify;
+  color: black;
+}
+
+.seq-feature .intro {
+  font-size: 15px;
+  z-index: 9999;
+  border: 1px solid black;
 }
 
 .seq-ncontent {
@@ -325,7 +349,7 @@ body {
   text-align: justify;
   display: block;
   width: 80%;
-  left: 10%;
+  left: 8%;
   top: 35%;
 }
 
@@ -335,6 +359,7 @@ body {
   font-size: 16px;
   /* Reset the white-space so content wraps as expected */
   white-space: normal;
+  z-index: 1;
 }
 
 .seq .seq-button {
@@ -352,6 +377,7 @@ body {
   transition-duration: 0.3s;
   -webkit-transition-property: color, background;
   transition-property: color, background;
+  z-index: 1;
 }
 
 .seq .seq-button:focus,
@@ -372,6 +398,7 @@ body {
   background-repeat: none;
   background-position: 50% 50%;
   background-size: cover;
+  z-index: 1;
 }
 
 .seq .seq-feature > div img {
@@ -380,6 +407,7 @@ body {
    * applied via an inline style on the <div class="seq-feature"> element
    */
   display: none;
+  z-index: 1;
 }
 
 .seq .seq-in {
@@ -412,7 +440,8 @@ body {
   width: 100%;
   left: 0;
   border-radius: 0;
-  margin-top: -40px;
+  margin-top: -40px
+  z-index: 1;;
 }
 
 .seq.seq-fallback .seq-next-button {
