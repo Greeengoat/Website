@@ -284,7 +284,7 @@ html, body {
 .slide__text {
   position: absolute;
   width: 42%;
-  bottom: 15%;
+  bottom: 12%;
   left: 5%;
   color: #fff;
   text-align: justify;
@@ -340,6 +340,12 @@ html, body {
   padding:10px 5px;
   width:80%;
   margin-bottom:8%;
+}
+
+.projectlink {
+  margin-top: 30px;
+  white-space: pre-line;
+  float:right;
 }
 
 .projectlink:hover {
