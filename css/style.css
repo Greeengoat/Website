@@ -861,8 +861,8 @@ i.fa-instagram{
 .contactImg {
 	width: 250px;
 	height: 250px;
-	background: url(../images/yang.jpg) 80% 50% no-repeat;
-	background-size: 80%;
+	background: url(../images/yang0.jpg) 50% 10% no-repeat;
+	background-size: 110%;
 	position: relative;
 	display: inline-block;
 	float: left;
