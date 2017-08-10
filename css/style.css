@@ -867,7 +867,7 @@ i.fa-instagram{
 	display: inline-block;
 	float: left;
 	border-radius: 50%;
-	border: 1px dotted black;
+	border: 1px solid #B0B0B0;
 	top: 10%;
 	background-color: white;
 }
@@ -882,7 +882,7 @@ i.fa-instagram{
 	line-height: 1.2;
 	padding: 40px 0 0 70px;
 	float: right;	
-	border-left: 1px solid #B0B0B0;
+	border-left: 1px dashed #B0B0B0;
 }
 
 .contactText {
@@ -895,7 +895,7 @@ i.fa-instagram{
 	float: right;
 	padding: 15px 70px;
 	color: black;
-	border-left: 1px solid #B0B0B0;
+	border-left: 1px dashed #B0B0B0;
 }
 
 .contact {
