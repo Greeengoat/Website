@@ -154,7 +154,7 @@ p.site-description{margin: 0;font-size: 16px;}
 
 .content-box .content{margin-bottom: 20px;}
 
-.content-box.box-image-1{background:#fff url(../images/index_pic.jpg) no-repeat 1% 65%; color: #333; max-height: 700px; background-size:54%;}
+.content-box.box-image-1{background:#fff url(../images/index_pic.jpg) no-repeat 1% 65%; color: #333; max-height: 700px; background-size:50%;}
 .content-box.box-image-2{background: url(../images/bg-5.jpg) 50% 50% no-repeat;color:#fff;position: relative; background-size:cover}
 .content-box.box-image-2:before {content:"";display: block;height: 100%;position: absolute;top: 0;left: 0;width: 100%;visibility: visible;background-color: rgba(0, 0, 0, .8);}
 
@@ -166,7 +166,7 @@ p.site-description{margin: 0;font-size: 16px;}
 .content-box.box-1 {font-family: 'Roboto', sans-serif;margin-top:40%;transform: translateY(-50%);}
 .content-box.box-1 .box-text{padding: 200px 0 145px 100px; position: relative;}
 .content-box.box-1 h2{font-size: 44px;color: #B81D18;line-height: 1;margin: 45px 0 15px 0px;font-weight: 300;}
-.content-box.box-1 span{font-size: 46px;font-weight: 300;color: #333;display: block;margin-bottom: 20px;margin-top:60px;text-indent: -5px}
+.content-box.box-1 span{font-size: 34px;font-weight: 300;color: #333;display: block;margin-bottom: 20px;margin-top:60px;text-indent: -5px}
 .content-box.box-1 img{margin: 10px 0;}
 .content-box.box-1 .lead {font-size: 19px;color: #444; margin-top:15vh;}
 .content-box.box-1 .lead1 {font-size: 19px;color: #444;}
