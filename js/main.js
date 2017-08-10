@@ -14,6 +14,6 @@ jQuery(document).ready(function ($) {
         setTimeout(function(){
             $(".se-pre-con").fadeOut('slow', function () {
             });
-        },1000); // set the time here
+        },700); // set the time here
     });  
 });
