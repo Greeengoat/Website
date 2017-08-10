@@ -852,42 +852,47 @@ i.fa-instagram{
 	position: relative;
 	margin: 0 auto;
 	height: 310px;
-	width: 800px;
-	background: white;
+	width: 680px;
+	background: transparent;
 	top: 50%;
 	transform: translateY(-50%);
 }
 
 .contactImg {
-	width: 310px;
-	height: 100%;
-	border-right: 1px dashed black;
-	background: url(../images/yang1.jpg) 10% 15% no-repeat;
+	width: 250px;
+	height: 250px;
+	background: url(../images/yang1.jpg) 30% 0% no-repeat;
 	background-size: 80%;
 	position: relative;
 	display: inline-block;
 	float: left;
+	border-radius: 50%;
+	border: 1px dotted black;
+	top: 15%;
+	background-color: white;
 }
 
 .contactHeader {
 	position: relative;
 	display: block;
-	text-align: center;
 	width: 395px;
-	height: 135px;
-	left: 50px;
+	height: 140px;
+	left: 20px;
 	font-size: 30px;
-	line-height: 1.1;
-	padding: 55px 0 0 15px;
-	float: left;
+	line-height: 1.2;
+	padding: 50px 0 0 15px;
+	float: right;	
 }
 
 .contactText {
 	position: relative;
 	top: 0;
-	width: 490px;
-	float: left;
-	padding: 15px 70px;
+	display: block;
+	margin: 0 auto;
+	left: 20px;
+	width: 395px;
+	float: right;
+	padding: 15px 20px;
 	color: black;
 }
 
