@@ -851,7 +851,7 @@ i.fa-instagram{
 .card { 
 	position: relative;
 	margin: 0 auto;
-	height: 320px;
+	height: 310px;
 	width: 800px;
 	background: white;
 	top: 50%;
@@ -862,7 +862,7 @@ i.fa-instagram{
 	width: 310px;
 	height: 100%;
 	border-right: 1px dashed black;
-	background: url(../images/yang1.jpg) 10% 0% no-repeat;
+	background: url(../images/yang1.jpg) 10% 15% no-repeat;
 	background-size: 80%;
 	position: relative;
 	display: inline-block;
@@ -871,23 +871,24 @@ i.fa-instagram{
 
 .contactHeader {
 	position: relative;
-	display: inline;
+	display: block;
+	text-align: center;
 	width: 395px;
 	height: 135px;
 	left: 50px;
-	border-bottom: 1px solid #F0F0F0;
 	font-size: 30px;
-	line-height: 1;
-	padding: 60px 0 0 15px;
+	line-height: 1.1;
+	padding: 55px 0 0 15px;
 	float: left;
 }
 
 .contactText {
 	position: relative;
 	top: 0;
-	width: 410px;
+	width: 490px;
 	float: left;
 	padding: 15px 70px;
+	color: black;
 }
 
 .contact {
