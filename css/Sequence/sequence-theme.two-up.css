@@ -308,12 +308,12 @@ body {
   margin: 0 auto;
   left: 0;
   right: 0;  
-  height: 380px;
-  border-bottom: 3px solid #F0F0F0;
+  height: 320px;
+  border-bottom: 3px dashed #F0F0F0;
 }
 
 .date-margin {
-  margin-top:10%;
+  margin-top:12%;
 }
 
 .seq .seq-content h3 {
@@ -333,6 +333,7 @@ body {
   width: 75%;
   left: 10%;
   top: 50%;
+  transform: translateY(-50%);
 }
 
 .seq .seq-content > div {
