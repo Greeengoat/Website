@@ -163,7 +163,7 @@ p.site-description{margin: 0;font-size: 16px;}
 .content-box .bg-4{background: rgba(255, 255, 255, .85);}
 .content-box.bg-2-2{background:grey;}
 
-.content-box.box-1 {font-family: 'Roboto', sans-serif;margin-top:40%;transform: translateY(-50%);}
+.content-box.box-1 {font-family: 'Roboto', sans-serif;margin-top:42%;transform: translateY(-50%);}
 .content-box.box-1 .box-text{padding: 200px 0 145px 100px; position: relative;}
 .content-box.box-1 h2{font-size: 44px;color: #B81D18;line-height: 1;margin: 45px 0 15px 0px;font-weight: 300;}
 .content-box.box-1 span{font-size: 34px;font-weight: 300;color: #333;display: block;margin-bottom: 20px;margin-top:60px;text-indent: -5px}
@@ -852,7 +852,7 @@ i.fa-instagram{
 	position: relative;
 	margin: 0 auto;
 	height: 310px;
-	width: 680px;
+	width: 700px;
 	background: transparent;
 	top: 50%;
 	transform: translateY(-50%);
@@ -868,20 +868,21 @@ i.fa-instagram{
 	float: left;
 	border-radius: 50%;
 	border: 1px dotted black;
-	top: 15%;
+	top: 10%;
 	background-color: white;
 }
 
 .contactHeader {
 	position: relative;
 	display: block;
-	width: 395px;
-	height: 140px;
-	left: 20px;
+	width: 450px;
+	height: 120px;
+	left: 60px;
 	font-size: 30px;
 	line-height: 1.2;
-	padding: 50px 0 0 15px;
+	padding: 40px 0 0 70px;
 	float: right;	
+	border-left: 1px solid #B0B0B0;
 }
 
 .contactText {
@@ -889,11 +890,12 @@ i.fa-instagram{
 	top: 0;
 	display: block;
 	margin: 0 auto;
-	left: 20px;
-	width: 395px;
+	left: 60px;
+	width: 450px;
 	float: right;
-	padding: 15px 20px;
+	padding: 15px 70px;
 	color: black;
+	border-left: 1px solid #B0B0B0;
 }
 
 .contact {
