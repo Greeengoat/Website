@@ -1028,60 +1028,82 @@ h2.double:after {
 
 /* List styling */
 .featureList, .featureList ul {
-  margin-top: 0;
-  padding-left: 2em;
-  list-style-type: none;
+	margin-top: 0;
+	padding-left: 2em;
+	list-style-type: none;
 }
 .featureList li:before {
-  position: absolute;
-  margin-left: -1.3em;
-  font-weight: bold;
+	position: absolute;
+	margin-left: -1.3em;
+	font-weight: bold;
 }
 .featureList li.tick:before {
-  content: "\2713";
-  color: darkgreen;
+	content: "\2713";
+	color: darkgreen;
 }
 .featureList li.cross:before {
-  content: "\2717";
-  color: crimson;
+	content: "\2717";
+	color: crimson;
 }
 
 .tooltip {
-    position: fixed;
-    display: inline-block;
-    color: black;
-    top: 40%;
-    right: 0%;
-    width: 50%;
-    height: 160px;
+	position: fixed;
+	display: inline-block;
+	color: black;
+	top: 40%;
+	right: 0%;
+	width: 50%;
+	height: 160px;
 }
 
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 100%;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    top: 150%;
-    left: 0%;
+	visibility: hidden;
+	width: 100%;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	top: 150%;
+	left: 0%;
 }
 
 .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
 }
 
 .tooltip:hover .tooltiptext {
 	cursor: pointer;
-    visibility: visible;
+	visibility: visible;
+}
+
+.mobile-wrap {
+	display: none;
+}
+
+.mobile-display {
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	margin: 0;
+	padding: 0;
+}
+
+@media(max-width:1024px){
+	.mobile-wrap {
+		display: block;
+	}
+	.wrap-body, .contactBG, .card, .slider-container, .seq, .button{
+		display:none;
+	}
 }
